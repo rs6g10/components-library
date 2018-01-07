@@ -8,12 +8,11 @@ import './styles.css';
  * Custom Checkbox component used as part of the <Checkbox> component.
  * This mimics an <input /> native component mimicking the checkbox behaviour.
  */
-const CustomCheckbox = ({ checked, boxClassName, checkClassName }) => (
-  <div>
-    <span className={classnames(boxClassName, 'check')}>
-      <i className={classnames(checkClassName, 'check')} style={{ visibility: checked ? 'visible' : 'hidden' }} />
+const CustomCheckbox = ({ checked, disabled, boxClassName, checkClassName }) => (
+  <span className={classnames(boxClassName, 'checkbox', disabled ? 'disabled' : '')}>
+      <i className={classnames(checkClassName, 'check')}
+         style={{ visibility: checked ? 'visible' : 'hidden' }} />
     </span>
-  </div>
 );
 
 CustomCheckbox.propTypes = {
@@ -34,6 +33,10 @@ CustomCheckbox.propTypes = {
    * Any additional css classes for the `check` style and not the container.
    */
   checkClassName: PropTypes.string,
+  /**
+   * If the element needs to be disabled
+   */
+  disabled: PropTypes.bool,
 };
 
 CustomCheckbox.defaultProps = {

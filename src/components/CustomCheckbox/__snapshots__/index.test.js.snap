@@ -1,35 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CustomCheckbox checkbox with unchecked value to match snapshot 1`] = `
-<div>
-  <span
+<span
+  className="checkbox"
+>
+  <i
     className="check"
-  >
-    <i
-      className="check"
-      style={
-        Object {
-          "visibility": "hidden",
-        }
+    style={
+      Object {
+        "visibility": "hidden",
       }
-    />
-  </span>
-</div>
+    }
+  />
+</span>
 `;
 
 exports[`CustomCheckbox default input to match snapshot 1`] = `
-<div>
-  <span
+<span
+  className="checkbox"
+>
+  <i
     className="check"
-  >
-    <i
-      className="check"
-      style={
-        Object {
-          "visibility": "hidden",
-        }
+    style={
+      Object {
+        "visibility": "hidden",
       }
-    />
-  </span>
-</div>
+    }
+  />
+</span>
 `;

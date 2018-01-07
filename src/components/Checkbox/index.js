@@ -21,6 +21,9 @@ class Checkbox extends Component {
   }
 
   handleClick(...args) {
+    if(this.props.disabled) {
+      return;
+    }
     const that = this;
     const [event] = args;
     this.setState({
@@ -46,6 +49,7 @@ class Checkbox extends Component {
       >
         <CustomCheckbox checked={this.state.checked} {...this.props} />
         <span
+          className="name"
           ref={(el) => {
             spanEl = el;
           }}
@@ -72,10 +76,20 @@ Checkbox.propTypes = {
    * Function called when checkbox/label is clicked.
    */
   onClick: PropTypes.func,
+  /**
+   * If the checkbox has a default value of checked or not
+   */
+  checked: PropTypes.bool,
+  /**
+   * If the checkbox is disabled or not
+   */
+  disabled: PropTypes.bool
 };
 
 Checkbox.defaultProps = {
-  onClick: ()=> {},
+  onClick: () => {
+  },
+  checked: false,
 };
 
 export default Checkbox;

@@ -2,5 +2,11 @@
      display: flex;
      align-items: center;
      padding: 8px 0;
+     line-height: 1.57;
+     height: 36px;
      cursor: pointer;
  }
+
+.name {
+     padding-left: 10px;
+}
