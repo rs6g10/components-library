@@ -1,0 +1,17 @@
+.checkbox {
+    border: 1px solid black;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}
+
+.check {
+    visibility: hidden;
+    background: black;
+    display: block;
+    height: 100%;
+}
+
+.name {
+    padding-left: 10px;
+}
