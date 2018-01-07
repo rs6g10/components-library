@@ -14,11 +14,6 @@ exports[`CustomCheckbox checkbox with unchecked value to match snapshot 1`] = `
       }
     />
   </span>
-  <span
-    className="name"
-  >
-    Example
-  </span>
 </div>
 `;
 
@@ -35,11 +30,6 @@ exports[`CustomCheckbox default input to match snapshot 1`] = `
         }
       }
     />
-  </span>
-  <span
-    className="name"
-  >
-    
   </span>
 </div>
 `;
